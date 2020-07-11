@@ -75,9 +75,9 @@ Final model consisted of the following layers:
 
 Training
 ---
-This part took quite lot of efforts for me. It was difficult to tune combination of hyperparameters learning rate,optimizer, batch size, keep_prob.
-Learning rate is very sensitive hyperparameter and I tried learning rate from 0.05 to 0.0005 to understand impact.
-Early termination is good idea, however when you see validation/training accuracy increasing it's lucrative to set number of epochs to high number. I finally limited number of epochs to 20 instead of 30 after observing steadiness in accuracy.
+This part took quite lot of efforts for me. It was difficult to tune combination of hyperparameters, learning rate,optimizer, batch size, keep_prob.
+Learning rate is very sensitive hyperparameter and I tried learning rate from 0.0005 to 0.05 to understand impact.
+Early stopping is good idea, however when you see validation/training accuracy increasing it's lucrative to set number of epochs to high number. I finally limited number of epochs to 20 instead of 30 after observing steadiness in accuracy.
 Batch size didn't affect much for this specific NN, I tried tuning it to 64,128,256. Best result obtained for batch size of 128. 
 Optimizer is one of the crucial hyperparameters, and most interesting to me. I explored a lot about different optimizers like stockastic gradient descent, Adagrad, Adam optimizer, momentum, etc. Adagrad and Adam provided best results, Adagrad took more epochs to reach high accuracy and hence I ended up using Adam optimizer.
 
