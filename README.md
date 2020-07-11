@@ -90,13 +90,13 @@ Results after 20 Epochs:
 
 Test set predictions were just above 93% accurate. This is good confidence level, there is much scope for improvement for reaching accuracy of test result up to 100%.
 
-Here, is the highest probability numbers from top 5. As probability numbers are greater than 0.99, I am pretty confident that model is working as expected for basic images.
+Here, is the highest probability numbers from top 5. As probability numbers are greater than 0.99, I am pretty confident that model is working as expected for basic images.<br /> 
 
 
-| Probability         	| |     Prediction	        					|
-|:---------------------:| |:---------------------------------:|
-| .99         			    | |Yield   								      	    |
-| .99     				      | |Keep Left 						        			|
-| .92					          | |Vehicles over 3.5 ton prohibitted	|
-| .99	      	      		| |Road Work 					 				        |
-| .99				            | |Pedestrian        	    						|
+| Probability         	|   Prediction	        					|
+|:---------------------:|:---------------------------------:|
+| .99         			    |Yield   								      	    |
+| .99     				      |Keep Left 						        			|
+| .92					          |Vehicles over 3.5 ton prohibitted	|
+| .99	      	      		|Road Work 					 				        |
+| .99				            |Pedestrian        	    						|
