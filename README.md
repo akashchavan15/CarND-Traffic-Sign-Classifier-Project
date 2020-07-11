@@ -10,9 +10,9 @@ Solution
 We first start with basic analysis of training data set. There are a little less than 52k images, split into training, validation and test sets.
 
 Our traffic signs belong to 43 different classes and image below shows the distribution of our training set:
-<img src="images/visualize_data.png" width="640lt="visualize_data" />
+<img src="images/visualize_data.png" width="640" lt="visualize_data" />
 
 The next thing we needed to do was to plot some random images from dataset just for visualization. Below image shows few of those, 
-<img src="images/sign.PNG" width="640lt="sign" />
+<img src="images/sign.PNG" width="640" lt="sign" />
 
 
