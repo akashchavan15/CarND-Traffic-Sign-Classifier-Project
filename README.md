@@ -72,3 +72,31 @@ Final model consisted of the following layers:
 |:---------------------:|:---------------------------------------------:|
 | Fully Conn(matmul)  	| 43 output   							        |
 | RELU                  |                                               |
+
+Training
+---
+This part took quite lot of efforts for me. It was difficult to tune combination of hyperparameters learning rate,optimizer, batch size, keep_prob.
+Learning rate is very sensitive hyperparameter and I tried learning rate from 0.05 to 0.0005 to understand impact.
+Early termination is good idea, however when you see validation/training accuracy increasing it's lucrative to set number of epochs to high number. I finally limited number of epochs to 20 instead of 30 after observing steadiness in accuracy.
+Batch size didn't affect much for this specific NN, I tried tuning it to 64,128,256. Best result obtained for batch size of 128. 
+Optimizer is one of the crucial hyperparameters, and most interesting to me. I explored a lot about different optimizers like stockastic gradient descent, Adagrad, Adam optimizer, momentum, etc. Adagrad and Adam provided best results, Adagrad took more epochs to reach high accuracy and hence I ended up using Adam optimizer.
+
+Results
+---
+Results after 20 Epochs:
+* training set accuracy of 96.4%
+* validation set accuracy of 95.1%
+* test set accuracy of 93.1%
+
+Test set predictions were just above 93% accurate. This is good confidence level, there is much scope for improvement for reaching accuracy of test result up to 100%.
+
+Here, is the highest probability numbers from top 5. As probability numbers are greater than 0.99, I am pretty confident that model is working as expected for basic images.
+
+
+| Probability         	| |     Prediction	        					|
+|:---------------------:| |:-------------------------------------------:|
+| .99         			| |Yield   									    |
+| .99     				| |Keep Left 									|
+| .92					| |Vehicles over 3.5 ton prohibitted			|
+| .99	      			| |Road Work 					 				|
+| .99				    | |Pedestrian        							|
