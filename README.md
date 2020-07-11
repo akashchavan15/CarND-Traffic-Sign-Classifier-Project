@@ -94,9 +94,9 @@ Here, is the highest probability numbers from top 5. As probability numbers are 
 
 
 | Probability         	| |     Prediction	        					|
-|:---------------------:| |:-------------------------------------------:|
-| .99         			| |Yield   									    |
-| .99     				| |Keep Left 									|
-| .92					| |Vehicles over 3.5 ton prohibitted			|
-| .99	      			| |Road Work 					 				|
-| .99				    | |Pedestrian        							|
+|:---------------------:| |:---------------------------------:|
+| .99         			    | |Yield   								      	    |
+| .99     				      | |Keep Left 						        			|
+| .92					          | |Vehicles over 3.5 ton prohibitted	|
+| .99	      	      		| |Road Work 					 				        |
+| .99				            | |Pedestrian        	    						|
