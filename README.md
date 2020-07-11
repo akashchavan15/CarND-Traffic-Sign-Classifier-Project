@@ -19,9 +19,9 @@ Actual labels for dataset are provided in signnames.csv file, let’s look how i
 Data Preprocessing
 ---
 As a first step, with images in dataset from different lighting conditions, it is necessary to normalize them such that they will have good intensity level distribution on histogram.
-Before Normalization:
-<img src="images/before_normalization.PNG" width="480" lt="before_normalization" />
+Before Normalization:<br /> 
+<img src="images/before_normalization.PNG" width="480" lt="before_normalization" /> <br /> 
 
-After Contrast Limited Adaptive Histogram Equalization:
-<img src="images/hist_equalized.PNG" width="480" lt="hist_equalized" />
-Contrast Limited Adaptive Histogram Equalization(CLAHE) method is pretty promising and provides great normalization in different lighting conditions. Since we are interested in brightness factor, CLAHE is applied to only Y channel by converting image to YUV.
+After Contrast Limited Adaptive Histogram Equalization:<br /> 
+<img src="images/hist_equalized.PNG" width="480" lt="hist_equalized" /><br /> 
+Contrast Limited Adaptive Histogram Equalization(CLAHE) method is pretty promising and provides great normalization in different lighting conditions.<br />  Since we are interested in brightness factor, CLAHE is applied to only Y channel by converting image to YUV.
