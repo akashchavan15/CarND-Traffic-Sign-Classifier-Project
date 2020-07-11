@@ -12,7 +12,15 @@ We first start with basic analysis of training data set. There are a little less
 Our traffic signs belong to 43 different classes and image below shows the distribution of our training set:
 <img src="images/visualize_data.png" width="640" lt="visualize_data" />
 
-The next thing we needed to do was to plot some random images from dataset just for visualization. Below image shows few of those, 
+From the picture it is clear that few classes have large number of labeled images and a few of classes have labeled images less than 500 in each class. This gives hint to augmentation, as suggested in video lectures, deep learning network shines with more data.
+Actual labels for dataset are provided in signnames.csv file, let’s look how images from few class look like. 
 <img src="images/sign.PNG" width="640" lt="sign" />
 
+Data Preprocessing
+---
+As a first step, with images in dataset from different lighting conditions, it is necessary to normalize them such that they will have good intensity level distribution on histogram.
+Before Normalization:
+<img src="images/before_normalization.PNG" width="640" lt="before_normalization" />
 
+After Contrast Limited Adaptive Histogram Equalization:
+<img src="images/hist_equalized.PNG" width="640" lt="hist_equalized" />
