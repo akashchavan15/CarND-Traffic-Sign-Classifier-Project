@@ -10,7 +10,7 @@ Solution
 We first start with basic analysis of training data set. There are a little less than 52k images, split into training, validation and test sets.
 
 Our traffic signs belong to 43 different classes and image below shows the distribution of our training set:
-<img src="images/sign.png" width="480" alt="sign" />
+<img src="images/visualize_data.png" width="480" alt="visualize_data" />
 
 
 
