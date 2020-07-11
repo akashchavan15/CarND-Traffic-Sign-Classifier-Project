@@ -24,4 +24,18 @@ Before Normalization:<br />
 
 After Contrast Limited Adaptive Histogram Equalization:<br /> 
 <img src="images/hist_equalized.PNG" width="480" lt="hist_equalized" /><br /> 
-Contrast Limited Adaptive Histogram Equalization(CLAHE) method is pretty promising and provides great normalization in different lighting conditions.<br />  Since we are interested in brightness factor, CLAHE is applied to only Y channel by converting image to YUV.
+Contrast Limited Adaptive Histogram Equalization(CLAHE) method is pretty promising and provides great normalization in different lighting conditions.Since we are interested in brightness factor, CLAHE is applied to only Y channel by converting image to YUV.
+
+Augmentation
+---
+After exploring data-set and trying NN without data augmentation, to make model more reliable and predictable, data augmentation is implemented. Few of classes don't have enough number of images and it is necessary to produce images using this technique. Images from ImageDataGenerator from Keras is a convenient option to augment data with variation in following parameters:
+1. Angle of rotation
+2. Shift in height
+3. Shift in width
+4. Shear range
+5. Zoom range
+
+Per class 4000 images are augmented..! Now, the data set with these variation and number of images per class looks great..!
+
+Model Architecture
+---
